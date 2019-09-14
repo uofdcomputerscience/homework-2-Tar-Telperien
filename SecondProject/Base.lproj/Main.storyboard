@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, user!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPy-ZP-2Zt">
-                                <rect key="frame" x="39" y="238" width="339" height="34"/>
+                                <rect key="frame" x="39" y="282" width="339" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
@@ -59,12 +59,34 @@
                                     <action selector="blueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6r-8T-ibE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhJ-Ix-mwm">
+                                <rect key="frame" x="306" y="215" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gray">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="grayButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xA-VK-5P9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFP-Dm-Xla">
+                                <rect key="frame" x="73" y="215" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Brown">
+                                    <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="brownButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXa-Fz-d7g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="blueButton" destination="TBw-cF-Cz0" id="IkB-5e-eMK"/>
+                        <outlet property="brownButton" destination="JFP-Dm-Xla" id="2dJ-C2-DAB"/>
+                        <outlet property="grayButton" destination="NhJ-Ix-mwm" id="6ic-Ri-z1F"/>
                         <outlet property="greenButton" destination="Vzy-Qz-pfs" id="a9y-o4-HVJ"/>
                         <outlet property="inputField" destination="mpv-AO-ZXC" id="kX4-qc-54J"/>
                         <outlet property="responseLabel" destination="JPy-ZP-2Zt" id="Pcg-cH-8aA"/>

@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenButton: UIButton!
     @IBOutlet weak var blueButton: UIButton!
     @IBOutlet weak var responseLabel: UILabel!
+    @IBOutlet weak var brownButton: UIButton!
+    @IBOutlet weak var grayButton: UIButton!
     
     var user = User(name: nil, favoriteColor: nil)
 
@@ -29,6 +31,16 @@ class ViewController: UIViewController {
     
     @IBAction func blueButtonTapped(_ sender: Any) {
         user.favoriteColor = .blue
+        updateResponseLabel()
+    }
+    
+    @IBAction func brownButtonTapped(_ sender: Any){
+        user.favoriteColor = .brown
+        updateResponseLabel()
+    }
+   
+    @IBAction func grayButtonTapped(_ sender: Any){
+        user.favoriteColor = .gray
         updateResponseLabel()
     }
     
